@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Account and Data Deletion — TakeDoll</title>
+<link rel="alternate" hreflang="ko" href="../">
+<style>
+  :root {
+    --ink: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e2e2e4;
+    --bg: #ffffff;
+    --accent: #2b5cd9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Roboto, sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 24px; margin-bottom: 40px; }
+  h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+  .langbar { margin-top: 20px; display: flex; gap: 8px; }
+  .langbar a {
+    font-size: 14px; padding: 6px 14px; text-decoration: none;
+    border: 1px solid var(--rule); color: var(--muted); border-radius: 999px;
+  }
+  .langbar a[aria-current="page"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+  h2 { font-size: 18px; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  p, li { margin: 0 0 12px; }
+  ol, ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .note { background: #fafafa; border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; margin: 16px 0 24px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; background: #fafafa; }
+  footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Account and Data Deletion</h1>
+  <p class="meta">TakeDoll · Developer: FunRabbit</p>
+  <nav class="langbar">
+    <a href="../">한국어</a>
+    <a href="./" aria-current="page">English</a>
+  </nav>
+</header>
+
+<p>This page explains how to delete your <strong>TakeDoll</strong> (the "Game") account and the data stored with it.</p>
+
+<h2>Option 1. Delete in the Game (immediate)</h2>
+<ol>
+  <li>Open the Game and sign in.</li>
+  <li>Open <strong>Settings</strong>.</li>
+  <li>Tap <strong>Delete Account</strong> and confirm twice when prompted.</li>
+  <li>When deletion is complete, the Game restarts from the beginning.</li>
+</ol>
+
+<h2>Option 2. Request by email (if you uninstalled the Game or cannot open it)</h2>
+<p>Send an email with the following details.</p>
+<ul>
+  <li>To: <a href="mailto:funrabbit.support@gmail.com?subject=TakeDoll%20Account%20Deletion%20Request">funrabbit.support@gmail.com</a></li>
+  <li>Subject: <strong>TakeDoll Account Deletion Request</strong></li>
+  <li>Body: the <strong>Google account email address</strong> you used to sign in to the Game</li>
+</ul>
+<p>After verifying your identity, we will delete your data <strong>within 30 days</strong> and confirm by email.</p>
+<div class="note">If you only played as a guest, your account is tied to your device and we cannot verify you by email. Please use <strong>Settings → Delete Account</strong> in the Game.</div>
+
+<h2>Data that is deleted</h2>
+<table>
+  <thead>
+    <tr><th>Data</th><th>Handling</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Account information (account identifier UID, Google account identifier and email)</td><td>Deleted immediately</td></tr>
+    <tr><td>Game data (progress, in-game currency and items, settings)</td><td>Deleted immediately</td></tr>
+    <tr><td>Game data stored on your device</td><td>Deleted immediately</td></tr>
+  </tbody>
+</table>
+
+<h2>Data that may be retained</h2>
+<table>
+  <thead>
+    <tr><th>Data</th><th>Reason and period</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>In-app purchase history</td><td>Kept by Google Play as payment records, under Google's policies and applicable law</td></tr>
+    <tr><td>Analytics data (usage statistics not linked to your account)</td><td>Automatically deleted after the Google Analytics retention period (up to 14 months)</td></tr>
+    <tr><td>Advertising data</td><td>Handled under the retention policies of the ad services (Unity Ads / LevelPlay)</td></tr>
+  </tbody>
+</table>
+
+<div class="note">Deleted data cannot be recovered, and purchased currency and items will also be lost.</div>
+
+<footer>
+  For more details, see our <a href="https://funrabbit-games.github.io/privacy/">Privacy Policy</a>.<br>
+  Contact: <a href="mailto:funrabbit.support@gmail.com">funrabbit.support@gmail.com</a>
+</footer>
+
+</div>
+</body>
+</html>
